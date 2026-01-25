@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Odyssée d'Hannibal</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>L'Odyssée d'Hannibal Barca</h1>
+        <p>Du serment de haine à la chute de Carthage</p>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Chronologie</h2>
+            <div id="timeline-container">
+                </div>
+        </aside>
+
+        <main class="content">
+            <div id="info-panel">
+                <h2 id="step-title">Sélectionnez une étape</h2>
+                <h3 id="step-date"></h3>
+                <p id="step-desc">Cliquez sur une étape à gauche pour commencer le voyage.</p>
+            </div>
+            
+            <div id="map"></div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
